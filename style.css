@@ -138,8 +138,8 @@ footer .social{
     cursor: pointer;
 }
 .icon i{
-    height:3vw;
-    width: 3vw;
+    height:2vw;
+    width: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
