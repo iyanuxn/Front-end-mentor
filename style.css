@@ -63,10 +63,10 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 30vw;
+    height: auto;
     gap: 5vw;
 }
-.subscribe-area input[type=email]{
+.mail{
     height: 14vw;
     border-radius: 7vw;
     outline: none;
@@ -76,12 +76,48 @@ body{
     font-family: Libre Franklin;
     font-weight: 500;
 }
+.wrong-mail{
+    height: 14vw;
+    border-radius: 7vw;
+    outline: none;
+    border: 1px solid hsl(354, 100%, 66%);
+    padding-left: 5vw;
+    font-size: 4vw;
+    font-family: Libre Franklin;
+    font-weight: 500;
+}
+.right-mail{
+    height: 14vw;
+    border-radius: 7vw;
+    outline: none;
+    border: 1px solid hsl(145, 63%, 49%);
+    padding-left: 5vw;
+    font-size: 4vw;
+    font-family: Libre Franklin;
+    font-weight: 500;
+}
+.errortext{
+    color: hsl(354, 100%, 66%);
+    font-size: 2.5vw;
+    font-style: italic;
+    display: none;
+    justify-content: center;
+    text-align: center;
+    }
+.successtext{
+    color: hsl(145, 63%, 49%);
+    font-size: 2.5vw;
+    font-style: italic;
+    display: none;
+    justify-content: center;
+    text-align: center;
+    }
 ::placeholder{
     font-size: 4vw;
     color: hsl(223, 100%, 88%);
     font-weight: 300;
 }
-.subscribe-area input[type=submit]{
+.notify{
     height: 14vw;
     border-radius: 7vw;
     outline: none;
@@ -94,7 +130,7 @@ body{
     cursor: pointer;
     transition: 0.8s ease;
 }
-.subscribe-area input[type=submit]:hover{
+.notify:hover{
     cursor: pointer;
     transition: 0.8s ease;
     box-shadow: 0vw 1vw 2vw 0.1vw hsl(223, 100%, 88%);
@@ -137,6 +173,7 @@ footer .social{
     border: 1px solid  hsl(0, 0%, 90%);
     cursor: pointer;
     padding: 3vw;
+    transition: 0.8s ease;
 }
 .icon i{
     height:2vw;
@@ -144,6 +181,11 @@ footer .social{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.icon:hover{
+    background-color:hsl(223, 87%, 63%);
+    color: white ;
+    transition: 0.8s ease;
 }
 .copyright{
     font-size: 2vw;
@@ -184,7 +226,7 @@ footer .social{
         flex-direction: row;
         margin-top: 1vw;
     }
-    .subscribe-area input[type=email]{
+    .mail{
         width: 30vw;
         height: 4vw;
         font-size: 2vw;
@@ -192,10 +234,40 @@ footer .social{
         padding-left: 2vw;
         margin-right: -4vw;
     }
+
+    .wrong-mail{
+        height: 4vw;
+        padding-left: 2vw;
+        font-size: 2vw;
+        font-family: Libre Franklin;
+    }
+    .right-mail{
+        height: 4vw;
+        padding-left: 2vw;
+        font-size: 2vw;
+        font-family: Libre Franklin;
+    }
+    .errortext{
+        font-size: 1vw;
+        font-style: italic;
+        display: none ;
+        justify-content: left;
+        text-align: left;
+        padding-left: 1.5vw;
+    }
+    .successtext{
+        color: hsl(145, 63%, 49%);
+        font-size: 1vw;
+        font-style: italic;
+        display: none;
+        justify-content: left;
+        text-align: left;
+        padding-left: 1.5vw;
+    }
     ::placeholder{
         font-size: 1vw;
     }
-    .subscribe-area input[type=submit]{
+    .notify{
         width: 15vw;
         height: 4vw;
         font-size: 1vw;
